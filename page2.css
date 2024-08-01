@@ -1,12 +1,3 @@
-@font-face {
-    font-family: frod;
-    src: url(./font/Freudian\ One\ Demo.ttf);
-}
-
-@font-face {
-    font-family: rose;
-    src: url(./font//ROSEFORD\ DEMO.otf);
-}
 
 .page2 {
     display: flex;
