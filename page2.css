@@ -1,0 +1,40 @@
+.page2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 15%;
+    background-color: #F8F7E5;
+    color: black;
+}
+
+.page2-head{
+    text-align: center;
+}
+
+.page2-head p {
+    font-family: calibri;
+    font-size: 1.4vw;
+}
+
+.page2-head h1 {
+    text-transform: uppercase;
+    font-family: rose;
+    font-size: 3.2vw;
+    margin: 5% 0;
+}
+
+.page2-head div {
+    display: flex;
+    text-align: left;
+    gap: 2%;
+}
+
+.line{
+    margin-top: 10vh;
+    width: 100%;
+    height: .8vw;
+    color: black;
+    border-top: 2px solid black;
+    border-bottom: 2px dotted black;
+}

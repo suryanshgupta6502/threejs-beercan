@@ -1,0 +1,296 @@
+@font-face {
+    font-family: frod;
+    src: url(./font/Freudian\ One\ Demo.ttf);
+}
+
+@font-face {
+    font-family: rose;
+    src: url(./font//ROSEFORD\ DEMO.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* color: white; */
+
+}
+
+html {
+    /* overflow: scroll; */
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.511);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.webgl {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /* position: -webkit-sticky; */
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    z-index: -1;
+    /* z-index: -1; */
+}
+
+.section {
+    /* height: 100vh; */
+}
+
+
+
+.page1 {
+    height: 200vh;
+    width: 100%;
+    color: #F8F7E5;
+    /* font-size: 6vw; */
+    position: relative;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* background-color: #86a7b3d0; */
+    background-color: #c67b7cd0;
+    /* background-color: #84a390d0;
+    background-color: #98af88d0; */
+    /* align-items: center; */
+    z-index: 0;
+    padding: 10% 5%;
+
+}
+
+.page1 p {
+    z-index: 1;
+    /* background-color: red; */
+}
+
+.upper {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.text-back h1 {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+    z-index: -5;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    font-size: 8vw;
+    font-family: frod;
+}
+
+.text-front {
+    position: relative;
+    top: 20%;
+    left: 0;
+    z-index: 5;
+
+    font-size: 8vw;
+    font-family: frod;
+}
+
+
+.noise {
+    height: 200vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    object-fit: cover;
+    background-image: url('./noise.png');
+    /* opacity: 100%; */
+}
+
+.beerinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 3fr; */
+    /* justify-items: center; */
+    /* justify-content: center;*/
+    /* justify-items: center; */
+    /* text-align: center; */
+    padding-top: 15%;
+    /* column-gap: 2%; */
+}
+
+.beerinfo-left {
+    padding-top: 10%;
+    font-size: 2rem;
+    text-align: right;
+}
+
+.beerinfo-left h1 {
+    font-size: 4vw;
+    font-family: rose;
+    text-transform: capitalize;
+    line-height: 90%;
+    color: black;
+    /* color: #212020; */
+}
+
+.beerinfo-left h3 {
+    font-size: 2vw;
+    font-family: Impact;
+    font-weight: 300;
+    margin: 3% 0;
+    text-transform: capitalize;
+
+}
+
+.beerinfo-left p {
+    font-size: 1.5vw;
+    font-family: calibri;
+    text-transform: capitalize;
+}
+
+
+
+.beerinfo-center {
+    position: relative;
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    font-size: 1rem;
+
+}
+
+.beerinfo-right {
+    padding-top: 10%;
+    text-align: left;
+    font-family: calibri;
+    line-height: 200%;
+
+    /* padding: auto; */
+}
+
+.beerinfo-right p {
+    font-size: 1.5vw;
+    color: black;
+}
+
+.dotoutine {
+    height: 550px;
+    width: 300px;
+    border: 2px dotted #f8f7e59e;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -5;
+    /* padding-left: 50%; */
+    /* transform: translateX(25%); */
+
+}
+
+.outline {
+    display: flex;
+    /* height: 20px; */
+    height: 530px;
+    width: 280px;
+    border: 2px solid #f8f7e5a0;
+    border-radius: 50px;
+    z-index: -5;
+}
+
+.underoutline {
+    display: flex;
+    padding-top: 5%;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    /* flex-wrap: nowrap; */
+}
+
+.underoutline h2 {
+    font-family: rose;
+    font-size: 2vw;
+    padding: 0 5vw;
+    text-align: center;
+    /* text-wrap: nowrap; */
+}
+
+.underoutline i {
+    border: 2px solid #F8F7E5;
+    padding: 3%;
+    border-radius: 50%;
+
+    /* width: 6vw; */
+}
+
+@media screen and (max-width:1080px) {
+
+    .beerinfo-left,
+    .beerinfo-right {
+        display: none;
+    }
+
+    .dotoutine {
+        transform: none;
+        height: 85vw;
+        width: 45vw;
+    }
+
+    .outline {
+        height: 83vw;
+        width: 43vw;
+    }
+
+    .beerinfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .underoutline h2 {
+        position: absolute;
+        top: 0%;
+        font-size: 8vw;
+        line-height: 90%;
+    }
+
+    .underoutline i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* background-color: red; */
+        /* margin: 10%; */
+        transform: translateX(-50%);
+    }
+
+    .underoutline i:first-child {
+        /* background-color: green; */
+        left: -15%;
+        position: absolute;
+        font-size: 300%;
+        /* top: 50;
+        left: 0; */
+        /* margin: 10%; */
+        /* transform: translateX(-50%); */
+    }
+
+    .underoutline i:last-child {
+        /* right: 0%; */
+        /* background-color: red; */
+        left: 115%;
+        font-size: 300%;
+        /* background-color: red; */
+    }
+
+}
