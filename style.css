@@ -1,12 +1,14 @@
 @font-face {
-    font-family: frod;
-    src: url('./font/FreudianOneDemo.ttf');
+    font-family: 'frod';
+    src: url('./font/FreudianOneDemo.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: rose;
-    src: url('./font/ROSEFORDDEMO.otf');
+    font-family: 'rose';
+    src: url('./font/ROSEFORDDEMO.otf') format('opentype');
 }
+
+
 
 * {
     margin: 0;

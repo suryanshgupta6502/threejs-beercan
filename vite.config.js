@@ -5,7 +5,15 @@ export default {
     root: './',
     publicDir: "./public/",
     base: './',
-    
-    
-
+    // server:
+    // {
+    //     host: true,
+    //     open: !isCodeSandbox // Open if it's not a CodeSandbox
+    // },
+    build:
+    {
+        outDir: './dist',
+        emptyOutDir: true,
+        sourcemap: true
+    }
 }
